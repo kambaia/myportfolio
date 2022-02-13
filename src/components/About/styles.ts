@@ -5,6 +5,7 @@ export const Container = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+ 
 
   .hard-skills{
     margin-top: 1.6rem;
@@ -12,12 +13,13 @@ export const Container = styled.section`
     align-items: center;
     flex-wrap: wrap;
     gap: 1.8rem;
+
   }
   .hability{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+	
     img{
       width: 3.4rem;
     }
@@ -40,10 +42,9 @@ export const Container = styled.section`
     font-weight: 500;
   }
   
-  
-
   .about-image{
     text-align: center;
+
    img{
      margin-top: 2rem;
      width: 100%;
