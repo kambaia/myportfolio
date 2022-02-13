@@ -7,7 +7,9 @@ import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
+import mongodbIcon from "../../assets/mongodb.svg";
 import phpIcon from "../../assets/php.svg";
+import firebaseIcon from "../../assets/firebase-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 
@@ -19,7 +21,7 @@ export function About(){
           <h2>Sobre mim</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
-          <p>Meu nome é Alberto Kambaia, sou técnico em informática, frequentando atualmente o curso de engenharia informática no  Instituto Superior Politécnico de Tecnologias e Ciências (ISPTEC) apaixão por programação desde os meus 12 anos de idade. Sou apaixonado por entregar soluções que agregam na vida das pessoas e ao mesmo tempo me desafiam. Aprimorei minhas habilidades como desenvolvedor Front-End e Back-End</p>
+          <p>Meu nome é Alberto Kambaia, sou técnico em informática, frequentando atualmente o curso de engenharia informática no  Instituto Superior Politécnico de Tecnologias e Ciências (ISPTEC) apaixonado por programação desde os meus 12 anos de idade. Sou apaixonado por entregar soluções que agregam na vida das pessoas e ao mesmo tempo me desafiam. Aprimorei minhas habilidades como desenvolvedor Front-End e Back-End</p>
         </ScrollAnimation>
 	
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000} style={{marginTop: "2rem", marginBottom: "2rem"}}>
@@ -27,9 +29,7 @@ export function About(){
           <p>Desenvolvo sites e aplicações utilizando HTML, CSS, e JavaScript. Tenho familiaridade em desenvolver layouts que me fornecem. Estou sempre me aprimorando a cada projeto que colocam em minhas mãos.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.6 * 1000}>
-			
-
-          <p>Sou uma pessoa dedicada que corre atrás para realizar seus sonhos, trabalhador e orientado a resultados, sempre busco alcançar minha melhor versão.</p>
+          <p>Sou uma pessoa dedicada que corre atrás para realizar os seus sonhos, trabalhador e orientado a resultados, sempre busco alcançar a minha melhor versão.</p>
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeInLeft" delay={0.7 * 1000}>
@@ -75,6 +75,16 @@ export function About(){
           <div className="hability">
           <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
             <img src={typescriptIcon} alt="Typescript" />
+          </ScrollAnimation>
+          </div>
+		  <div className="hability">
+          <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
+            <img src={mongodbIcon} alt="Typescript" />
+          </ScrollAnimation>
+          </div>
+		  <div className="hability">
+          <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
+            <img src={firebaseIcon} alt="Typescript" />
           </ScrollAnimation>
           </div>
 

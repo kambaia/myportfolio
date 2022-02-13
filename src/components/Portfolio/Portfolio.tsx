@@ -49,7 +49,7 @@ export function Portfolio(){
             </header>
             <div className="body">
               <h3>Bibioteca Online</h3>
-              <p>Uma versão mais agradável para acessar qualquer projecto de fim de curso, sendo os melhores distacados em priemerio lugar.
+              <p>Uma versão mais agradável para acessar qualquer projecto de fim de curso, sendo os melhores destacados em primeiro lugar.
               </p>
             </div>
             <footer>
