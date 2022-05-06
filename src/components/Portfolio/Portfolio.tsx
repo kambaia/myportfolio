@@ -155,9 +155,13 @@ export function Portfolio(){
           </div>
           <footer>
             <ul className="tech-list">
+              <li>Node</li>
+              <li>Express</li>
+              <li>mongodb</li>
+              <li>Firebase</li>
+              <li>AWS</li>
               <li>React</li>
-              <li>HTML</li>
-              <li>Styled-Componts</li>
+              <li>Redux</li>
             </ul>
           </footer>
         </div>
