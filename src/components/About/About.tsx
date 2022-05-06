@@ -93,7 +93,7 @@ export function About(){
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
-          <img width={400} src="https://scontent.flad1-1.fna.fbcdn.net/v/t1.6435-9/64883354_1266181256873105_2276378365332029440_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_eui2=AeFufmkdt1WBGVBtmqkFWC59YxNzgsYMfUljE3OCxgx9SctSXvcF3opk5sqAu25cBbpsixdRVWg7tFEKAyeJqXd7&_nc_ohc=BdAsmwXPR8UAX-clPsn&_nc_ht=scontent.flad1-1.fna&oh=00_AT_q9R_hsHJT0V29WuT6pUpx4asbztZMaxV9SGQgbQx4Gw&oe=622C88DE" alt="Imagem de perfil" />
+          <img width={400} src="/mim.jpg" alt="Imagem de perfil" />
         </ScrollAnimation>
       </div>
     </Container>
