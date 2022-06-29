@@ -3,7 +3,7 @@ import { useForm, ValidationError } from '@formspree/react'
 import { toast, ToastContainer } from 'react-toastify'
 import { useEffect, useState } from 'react'
 import validator from 'validator'
-
+import { Translate } from "react-auto-translate";
 export function Form() {
   const [state, handleSubmit] = useForm('myyozglw')
 
@@ -47,7 +47,7 @@ export function Form() {
 
   return (
     <Container>
-      <h2>Entre em contato a partir do formulário abaixo</h2>
+      <h2><Translate>Entre em contato a partir do formulário abaixo</Translate></h2>
       <form onSubmit={handleSubmit}>
         <input
           placeholder="Email"

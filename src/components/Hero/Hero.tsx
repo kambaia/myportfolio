@@ -2,27 +2,28 @@ import { BrowserRouter } from "react-router-dom"
 import { Container } from "./styles"
 import ScrollAnimation from "react-animate-on-scroll"
 import Illustration from "../../assets/illustration.svg"
-import { NavHashLink } from "react-router-hash-link"
+import { NavHashLink } from "react-router-hash-link";
+import { Translate } from "react-auto-translate";
 export function Hero(){
   return(
     <Container id="home">
       <div className="hero-text">
         <ScrollAnimation animateIn="fadeInUp">
-          <p>Olá 👋, eu sou</p>
+          <p><Translate>Olá 👋, eu sou</Translate></p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2*1000}>
           <h1>Alberto Kambaia</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>Desenvolvedor Full Stack</h3>
+          <h3><Translate>Desenvolvedor Full Stack</Translate></h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">Sou um técnico em informática com foco em desenvolvimento Web com JavaScript.</p>
+          <p className="small-resume"><Translate>Sou um técnico em informática com foco em desenvolvimento Web com JavaScript.</Translate></p>
         </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeInUp" delay={0.8*1000}>
             <BrowserRouter>
-              <NavHashLink smooth to="#contato" className="button">Contato</NavHashLink>
+              <NavHashLink smooth to="#contato" className="button"><Translate>Contato</Translate></NavHashLink>
             </BrowserRouter>
           </ScrollAnimation>
       </div>

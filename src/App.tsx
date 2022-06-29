@@ -1,19 +1,30 @@
-import React from 'react'
-import { useEffect } from 'react'
-import { Footer } from './components/Footer/Footer'
-import { Header } from './components/Header/Header'
-import { Main } from './components/Main/Main'
-import { GlobalStyle } from './styles/global'
-import 'react-toastify/dist/ReactToastify.css'
+import React, { useContext } from "react";
+import { useEffect } from "react";
+import { Translator, Translate } from "react-auto-translate";
+import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
+import { Main } from "./components/Main/Main";
+import { GlobalStyle } from "./styles/global";
+import "react-toastify/dist/ReactToastify.css";
+import cacheProvider from "./utils/cacheProvider";
+import { LanguageContext } from "./context/context";
 function App() {
+  const { language } = useContext(LanguageContext);
   return (
     <>
-      <GlobalStyle></GlobalStyle>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
+      <Translator
+        cacheProvider={cacheProvider}
+        from={"pt"}
+        to={language}
+        googleApiKey="AIzaSyAfoW3-nAGT22_alscL8co5KnuBowWiSps"
+      >
+        <GlobalStyle></GlobalStyle>
+        <Header></Header>
+        <Main></Main>
+        <Footer></Footer>
+      </Translator>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

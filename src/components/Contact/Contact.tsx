@@ -2,15 +2,15 @@ import { Container } from "./styles";
 import emailIcon from "../../assets/email-icon.svg";
 import phoneIcon from "../../assets/phone-icon.svg"
 import { Form } from "../Form/Form";
-
+import { Translate } from "react-auto-translate";
 
 export function Contact(){
 
   return(
     <Container id="contato">
       <header>
-        <h2>Entre em contato comigo</h2>
-        <p>Se você viu o meu potencial ou quer conversar comigo, não exite em me mandar uma mensagem.</p>
+        <h2><Translate>Entre em contato comigo</Translate></h2>
+        <p><Translate>Se você viu o meu potencial ou quer conversar comigo, não exite em me mandar uma mensagem.</Translate></p>
       </header>
       <div className="contacts">
         <div>

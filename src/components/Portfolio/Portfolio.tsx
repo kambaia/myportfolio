@@ -2,12 +2,12 @@ import { Container } from "./styles";
 import githubIcon from "../../assets/github-icon.svg"
 import externalLinkIcon from "../../assets/external-link-icon.svg"
 import ScrollAnimation from "react-animate-on-scroll";
-
+import { Translate } from "react-auto-translate";
 
 export function Portfolio(){
   return(
     <Container id="portfolio">
-      <h2>Meu portfólio</h2>
+      <h2><Translate>Meu portfólio</Translate></h2>
 
       <div className="projects">
 
@@ -23,7 +23,7 @@ export function Portfolio(){
           </header>
           <div className="body">
             <h3>PCO</h3>
-            <p>Uma aplicação Web criada com a finalidade de permitir os estudantes e encarregados de educação fazerem pagamentos online <a href="https://pco.vercel.app/">pco</a>.
+            <p><Translate>Uma aplicação Web criada com a finalidade de permitir os estudantes e encarregados de educação fazerem pagamentos online</Translate> <a href="https://pco.vercel.app/">pco</a>.
             </p>
           </div>
           <footer>
@@ -48,8 +48,8 @@ export function Portfolio(){
             </div>
             </header>
             <div className="body">
-              <h3>Bibioteca Online</h3>
-              <p>Uma versão mais agradável para acessar qualquer projecto de fim de curso, sendo os melhores destacados em primeiro lugar.
+              <h3><Translate>Bibioteca Online</Translate></h3>
+              <p><Translate>Uma versão mais agradável para acessar qualquer projecto de fim de curso, sendo os melhores destacados em primeiro lugar.</Translate>
               </p>
             </div>
             <footer>
@@ -73,8 +73,8 @@ export function Portfolio(){
             </div>
             </header>
             <div className="body">
-              <h3>Sistema de G. Escolar</h3>
-              <p>Um sistema de gestão escolar desktop, criado para ajudar a gerir um pequeno colégio com mais de 643 alunos.
+              <h3><Translate>Sistema de G. Escolar</Translate></h3>
+              <p><Translate>Um sistema de gestão escolar desktop, criado para ajudar a gerir um pequeno colégio com mais de 643 alunos.</Translate>
               </p>
             </div>
             <footer>
@@ -97,7 +97,7 @@ export function Portfolio(){
           </header>
           <div className="body">
             <h3>ECASIM</h3>
-            <p>Uma aplicação Web com finalidade de consutória online <a href="https://ecasim.ao/">ecasim</a>.
+            <p><Translate>Uma aplicação Web com finalidade de consutória online</Translate> <a href="https://ecasim.ao/">ecasim</a>.
             </p>
           </div>
           <footer>
@@ -125,7 +125,7 @@ export function Portfolio(){
           </header>
           <div className="body">
             <h3>ToquePlay</h3>
-            <p>ToquePlay é um serviço de streaming e venda de músicas online <a href="https://www.toqueplay.com/">toqueplay</a>
+            <p><Translate>ToquePlay é um serviço de streaming e venda de músicas online</Translate><a href="https://www.toqueplay.com/">toqueplay</a>
             </p>
           </div>
           <footer>
@@ -150,7 +150,7 @@ export function Portfolio(){
           </header>
           <div className="body">
             <h3>PIA</h3>
-            <p>Pagamentos Instituicional Angolano é um sistema que visa melhorar a forma de pagamento de proprinas e outros serviços nas diferentes instituições escolares em angola <a href="https://pia-payment.vercel.app/"> pia(Angola)</a>
+            <p><Translate>Pagamentos Instituicional Angolano é um sistema que visa melhorar a forma de pagamento de proprinas e outros serviços nas diferentes instituições escolares em angola</Translate> <a href="https://pia-payment.vercel.app/"> pia(Angola)</a>
             </p>
           </div>
           <footer>
