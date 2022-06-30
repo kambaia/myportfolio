@@ -184,6 +184,11 @@ export const DropDown = styled.div`
   color: #fff;
   text-transform: uppercase;
   padding: 10px 0;
+
+  width: 300px;
+  display: fle;
+  justify-content: flex-end;
+  position: relative;
   .dropbtn {
     color: #ffff;
     padding: 0.6rem 0.8rem;
@@ -192,11 +197,18 @@ export const DropDown = styled.div`
     text-transform: uppercase;
     transition: filter 0.25s;
     width: auto;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    .name{
+      width: 90%;
+    }
   }
 
   .dropdown {
     position: relative;
     display: inline-block;
+
   }
 
   .dropdown-content {
@@ -211,6 +223,9 @@ export const DropDown = styled.div`
     text-align: center;
     max-height: 200px;
     overflow-y: auto;
+    left: 0;
+    width: 90%;
+   
  
 
   }
@@ -226,7 +241,7 @@ export const DropDown = styled.div`
     background-color: #f1f1f1;
   }
 
-  .dropdown:hover .dropdown-content {
+  .dropdown:hove .dropdown-content {
     display: block;
   }
 

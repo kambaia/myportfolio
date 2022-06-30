@@ -17,10 +17,6 @@ export const options = [
 		value: "zh-CN"
 	},
 	{
-		label:"Chinese (Traditional)",
-		value: "zh-TW"
-	},
-	{
 		label:"English",
 		value: "en"
 	},

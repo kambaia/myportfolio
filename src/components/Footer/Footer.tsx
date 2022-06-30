@@ -5,7 +5,7 @@ import linkedinIcon from '../../assets/linkedin.png'
 import githubIcon from '../../assets/github.png'
 import instagramIcon from '../../assets/instagram.png'
 import discordIcon from '../../assets/discord.png'
-
+import { Translate } from "react-auto-translate";
 export function Footer() {
   return (
     <Container className="footer">
@@ -15,7 +15,7 @@ export function Footer() {
       </a>
       <div>
         <p>
-          Este site foi feito com <img src={reactIcon} alt="React" /> e muito
+          <Translate>Este site foi desenvolvido por mim </Translate> <img src={reactIcon} alt="React" /> <Translate>e com muito</Translate>
           <span>❤️</span>
         </p>
       </div>

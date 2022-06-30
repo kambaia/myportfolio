@@ -9,6 +9,7 @@ import { LanguageContext } from "../../context/context";
 import { options } from "../../utils/languages";
 export function Header() {
   const [isActive, setActive] = useState(false);
+  const [menuDrop, setMenuDrop]=useState(false);
   const [option, setOption] = useState(false);
   const [actualLanguage, setActualLanguage] = useState(
     window.localStorage.getItem("lang")
@@ -26,9 +27,6 @@ export function Header() {
     setLanguage(value);
     setOption(!option);
   };
-
-  console.log(options);
-
   function toggleTheme() {
     let html = document.getElementsByTagName("html")[0];
     html.classList.toggle("light");
@@ -71,10 +69,13 @@ export function Header() {
           <a href={Curriculo} download className="button">
             CV
           </a>
-            <DropDown>
+            <DropDown onClick={()=>{
+              setMenuDrop(!menuDrop);
+              console.log(menuDrop);
+            }}>
               <div className="dropdown">
-                <button className="dropbtn"> {actualLanguage?actualLanguage:"Portuguese"}<FiChevronDown /></button>
-                <div className="dropdown-content">
+                <button className="dropbtn"><span className="name">{actualLanguage?actualLanguage:"Portuguese"}</span><FiChevronDown /></button>
+                <div className="dropdown-content" style={{display: menuDrop? 'block': 'none'}}>
                   {options.map((item, index) => (
                       <ul  key={index}>
                         <li

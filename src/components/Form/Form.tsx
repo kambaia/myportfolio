@@ -49,6 +49,7 @@ export function Form() {
     <Container>
       <h2><Translate>Entre em contato a partir do formulário abaixo</Translate></h2>
       <form onSubmit={handleSubmit}>
+        
         <input
           placeholder="Email"
           id="email"
