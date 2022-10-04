@@ -4,7 +4,7 @@ import { NavHashLink, HashLink } from "react-router-hash-link";
 import { useContext, useEffect, useState } from "react";
 import { FiChevronDown } from 'react-icons/fi';
 import { Translate } from "react-auto-translate";
-import Curriculo from "../../assets/kambaia-cv.pdf";
+import Curriculo from "../../assets/cv-kambaia.pdf";
 import { LanguageContext } from "../../context/context";
 import { options } from "../../utils/languages";
 export function Header() {
