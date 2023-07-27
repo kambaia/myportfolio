@@ -38,7 +38,7 @@ export function Hero() {
               rel='noreferrer'
               className='button'
             >
-              Comprar
+              Fale comigo
             </a>
           </BrowserRouter>
         </ScrollAnimation>
