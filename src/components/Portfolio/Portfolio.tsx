@@ -1,172 +1,128 @@
-import { Container } from "./styles";
-import githubIcon from "../../assets/github-icon.svg"
-import externalLinkIcon from "../../assets/external-link-icon.svg"
-import ScrollAnimation from "react-animate-on-scroll";
-import { Translate } from "react-auto-translate";
+import { Container } from './styles';
+import githubIcon from '../../assets/github-icon.svg';
+import externalLinkIcon from '../../assets/external-link-icon.svg';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Translate } from 'react-auto-translate';
+import { techs } from './technology';
 
-export function Portfolio(){
-  return(
-    <Container id="portfolio">
-      <h2><Translate>Meu portfólio</Translate></h2>
-
-      <div className="projects">
-
-      <ScrollAnimation animateIn="flipInX">
-        <div className="project">
-          <header>
-          <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-          <div className="project-links">
-          <a href="https://github.com/kambaia/api-pia" target="_blank" rel="noreferrer">
-                <img src={externalLinkIcon} alt="Visitar site" />
-              </a>
-          </div>
-          </header>
-          <div className="body">
-            <h3>PCO</h3>
-            <p><Translate>Uma aplicação Web criada com a finalidade de permitir os estudantes e encarregados de educação fazerem pagamentos online</Translate> <a href="https://pco.vercel.app/">pco</a>.
-            </p>
-          </div>
-          <footer>
-            <ul className="tech-list">
-              <li>Node</li>
-              <li>Express</li>
-              <li>mongodb</li>
-              <li>Reacjs</li>
-            </ul>
-          </footer>
-        </div>
-      </ScrollAnimation>
-
-        <ScrollAnimation animateIn="flipInX">
-          <div className="project">
-            <header>
-            <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            <div className="project-links">
-              <a href="https://github.com/kambaia/Biblioteca-back-end" target="_blank" rel="noreferrer">
-                <img src={githubIcon} alt="GitHub" />
-              </a>
-            </div>
-            </header>
-            <div className="body">
-              <h3><Translate>Bibioteca Online</Translate></h3>
-              <p><Translate>Uma versão mais agradável para acessar qualquer projecto de fim de curso, sendo os melhores destacados em primeiro lugar.</Translate>
-              </p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>React</li>
-                <li>Redux</li>
-                <li>Styled Components</li>
-              </ul>
-            </footer>
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation animateIn="flipInX">
-          <div className="project">
-            <header>
-            <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-            <div className="project-links">
-              <a href="https://github.com/kambaia/sistemapro" target="_blank" rel="noreferrer">
-                <img src={externalLinkIcon} alt="Visitar site" />
-              </a>
-            </div>
-            </header>
-            <div className="body">
-              <h3><Translate>Sistema de G. Escolar</Translate></h3>
-              <p><Translate>Um sistema de gestão escolar desktop, criado para ajudar a gerir um pequeno colégio com mais de 643 alunos.</Translate>
-              </p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>C# (POO)</li>
-              </ul>
-            </footer>
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation animateIn="flipInX">
-        <div className="project">
-          <header>
-          <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-          <div className="project-links">
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
-              <img src={githubIcon} alt="GitHub" />
-            </a>
-          </div>
-          </header>
-          <div className="body">
-            <h3>ECASIM</h3>
-            <p><Translate>Uma aplicação Web com finalidade de consutória online</Translate> <a href="https://ecasim.ao/">ecasim</a>.
-            </p>
-          </div>
-          <footer>
-            <ul className="tech-list">
-            <ul className="tech-list">
-              <li>React</li>
-              <li>HTML</li>
-              <li>Styled-Componts</li>
-              <li>Firebase</li>
-            </ul>
-            </ul>
-          </footer>
-        </div>
-      </ScrollAnimation>
-
-      <ScrollAnimation animateIn="flipInX">
-        <div className="project">
-          <header>
-          <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-          <div className="project-links">
-            <a href="https://github.com/ithustle?tab=repositories" target="_blank" rel="noreferrer">
-              <img src={githubIcon} alt="GitHub" />
-            </a>
-          </div>
-          </header>
-          <div className="body">
-            <h3>ToquePlay</h3>
-            <p><Translate>ToquePlay é um serviço de streaming e venda de músicas online</Translate><a href="https://www.toqueplay.com/">toqueplay</a>
-            </p>
-          </div>
-          <footer>
-            <ul className="tech-list">
-              <li>React</li>
-              <li>HTML</li>
-              <li>Styled-Componts</li>
-            </ul>
-          </footer>
-        </div>
-      </ScrollAnimation>
-
-      <ScrollAnimation animateIn="flipInX">
-        <div className="project">
-          <header>
-          <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-          <div className="project-links">
-            <a href="https://github.com/kambaia/system-mage" target="_blank" rel="noreferrer">
-              <img src={githubIcon} alt="GitHub" />
-            </a>
-          </div>
-          </header>
-          <div className="body">
-            <h3>PIA</h3>
-            <p><Translate>Pagamentos Instituicional Angolano é um sistema que visa melhorar a forma de pagamento de proprinas e outros serviços nas diferentes instituições escolares em angola</Translate> <a href="https://pia-payment.vercel.app/"> pia(Angola)</a>
-            </p>
-          </div>
-          <footer>
-            <ul className="tech-list">
-              <li>Node</li>
-              <li>Express</li>
-              <li>mongodb</li>
-              <li>Firebase</li>
-              <li>AWS</li>
-              <li>React</li>
-              <li>Redux</li>
-            </ul>
-          </footer>
-        </div>
-      </ScrollAnimation>
-
+export function Portfolio() {
+  return (
+    <Container id='portfolio'>
+      <h2>
+        <Translate>Meu portfólio</Translate>
+      </h2>
+      <div className='project-company'>
+        <h2>
+          <Translate>Minha experiência das seguintes empresas</Translate>
+        </h2>
+      </div>
+      <div className='projects'>
+        {techs.map((item) => {
+          if (item.company)
+            return (
+              <ScrollAnimation animateIn='flipInX'>
+                <div className='project'>
+                  <header>
+                    <svg
+                      width='50'
+                      xmlns='http://www.w3.org/2000/svg'
+                      role='img'
+                      viewBox='0 0 24 24'
+                      fill='none'
+                      stroke='#23ce6b '
+                      stroke-width='1'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    >
+                      <title>Folder</title>
+                      <path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z'></path>
+                    </svg>
+                    <div className='project-links'>
+                      <a
+                        href='https://github.com/kambaia/'
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        <img src={externalLinkIcon} alt='Visitar site' />
+                      </a>
+                    </div>
+                  </header>
+                  <div className='body'>
+                    <h3>{item.title}</h3>
+                    <p>
+                      <Translate>{item.description}</Translate>{' '}
+                      <a href={item?.link}>{item.title}</a>.
+                    </p>
+                  </div>
+                  <footer>
+                    <ul className='tech-list'>
+                      {item.tech.map((tech) => (
+                        <li>{tech.name}</li>
+                      ))}
+                    </ul>
+                  </footer>
+                </div>
+              </ScrollAnimation>
+            );
+        })}
+      </div>
+      <div className='project-only'>
+        <h2>
+          <Translate>Minha experiência pessoal</Translate>
+        </h2>
+      </div>
+      <div className='projects'>
+        {techs.map((item) => {
+          if (!item.company)
+            return (
+              <ScrollAnimation animateIn='flipInX'>
+                <div className='project'>
+                  <header>
+                    <svg
+                      width='50'
+                      xmlns='http://www.w3.org/2000/svg'
+                      role='img'
+                      viewBox='0 0 24 24'
+                      fill='none'
+                      stroke='#23ce6b '
+                      stroke-width='1'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    >
+                      <title>Folder</title>
+                      <path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z'></path>
+                    </svg>
+                    <div className='project-links'>
+                      <a
+                        href='https://github.com/kambaia/'
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        <img src={externalLinkIcon} alt='Visitar site' />
+                      </a>
+                    </div>
+                  </header>
+                  <div className='body'>
+                    <h3>{item.title}</h3>
+                    <p>
+                      <Translate>{item.description}</Translate>{' '}
+                      <a href={item?.link} target='_blank' rel='noreferrer'>
+                        {item.title}
+                      </a>
+                      .
+                    </p>
+                  </div>
+                  <footer>
+                    <ul className='tech-list'>
+                      {item.tech.map((tech) => (
+                        <li>{tech.name}</li>
+                      ))}
+                    </ul>
+                  </footer>
+                </div>
+              </ScrollAnimation>
+            );
+        })}
       </div>
     </Container>
   );
