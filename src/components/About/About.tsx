@@ -67,7 +67,11 @@ export function About() {
           </h3>
         </ScrollAnimation>
         <div>
-          <h3>Empresas</h3>
+          <h3>
+            {' '}
+            <Translate>Empresas</Translate>
+          </h3>
+
           <div className='hard-skills'>
             <div className='logo-company'>
               <ScrollAnimation animateIn='fadeInUp' delay={0.1 * 1000}>
@@ -95,7 +99,10 @@ export function About() {
           </div>
         </div>
         <div>
-          <h3>Princípais tecnologias</h3>
+          <h3>
+            {' '}
+            <Translate>Princípais tecnologias</Translate>
+          </h3>
           <div>
             <div className='hard-skills'>
               <div className='hability'>

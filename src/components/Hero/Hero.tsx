@@ -38,7 +38,7 @@ export function Hero() {
               rel='noreferrer'
               className='button'
             >
-              Fale comigo
+              <Translate> Fale comigo</Translate>
             </a>
           </BrowserRouter>
         </ScrollAnimation>

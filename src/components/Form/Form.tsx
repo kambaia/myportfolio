@@ -1,20 +1,20 @@
-import { Container, ContainerSucces } from './styles'
-import { useForm, ValidationError } from '@formspree/react'
-import { toast, ToastContainer } from 'react-toastify'
-import { useEffect, useState } from 'react'
-import validator from 'validator'
-import { Translate } from "react-auto-translate";
+import { Container, ContainerSucces } from './styles';
+import { useForm, ValidationError } from '@formspree/react';
+import { toast, ToastContainer } from 'react-toastify';
+import { useEffect, useState } from 'react';
+import validator from 'validator';
+import { Translate } from 'react-auto-translate';
 export function Form() {
-  const [state, handleSubmit] = useForm('myyozglw')
+  const [state, handleSubmit] = useForm('myyozglw');
 
-  const [validEmail, setValidEmail] = useState(false)
-  const [message, setMessage] = useState('')
+  const [validEmail, setValidEmail] = useState(false);
+  const [message, setMessage] = useState('');
 
   function verifyEmail(email: string) {
     if (validator.isEmail(email)) {
-      setValidEmail(true)
+      setValidEmail(true);
     } else {
-      setValidEmail(false)
+      setValidEmail(false);
     }
   }
 
@@ -26,64 +26,65 @@ export function Form() {
         closeOnClick: true,
         hideProgressBar: false,
         toastId: 'succeeded',
-      })
+      });
     }
-  })
+  });
   if (state.succeeded) {
     return (
       <ContainerSucces>
         <h3>Obrigado por entrar em contato!</h3>
         <button
           onClick={() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' })
+            window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         >
           Voltar ao topo
         </button>
         <ToastContainer />
       </ContainerSucces>
-    )
+    );
   }
 
   return (
     <Container>
-      <h2><Translate>Entre em contato a partir do formulário abaixo</Translate></h2>
+      <h2>
+        <Translate>Entre em contato a partir do formulário abaixo</Translate>
+      </h2>
       <form onSubmit={handleSubmit}>
-        
         <input
-          placeholder="Email"
-          id="email"
-          type="email"
-          name="email"
+          placeholder='Email'
+          id='email'
+          type='email'
+          name='email'
           onChange={(e) => {
-            verifyEmail(e.target.value)
+            verifyEmail(e.target.value);
           }}
           required
         />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <ValidationError prefix='Email' field='email' errors={state.errors} />
         <textarea
           required
-          placeholder="Deixe sua mensagem"
-          id="message"
-          name="message"
+          placeholder='Deixe sua mensagem'
+          id='message'
+          name='message'
           onChange={(e) => {
-            setMessage(e.target.value)
+            setMessage(e.target.value);
           }}
         />
         <ValidationError
-          prefix="Message"
-          field="message"
+          prefix='Message'
+          field='message'
           errors={state.errors}
         />
-       
+
         <button
-          type="submit"
+          type='submit'
           disabled={state.submitting || !validEmail || !message}
         >
-          Enviar
+          <Translate>Enviar</Translate>
         </button>
       </form>
       <ToastContainer />
     </Container>
-  )
+  );
 }
